@@ -42,7 +42,7 @@ def parse_args(default_t=1, default_T=0):
     parser = argparse.ArgumentParser()
     parser.add_argument("--time", "-t", type=float, default=default_t)
     parser.add_argument("--offset", "-T", type=float, default=default_T)
-    parser.add_argument("--bulbs", "-b", nargs="+", default=["192.168.1.184"])
+    parser.add_argument("--bulbs", "-b", nargs="+")
     parser.add_argument("--bulbs-file", "-B")
     args = parser.parse_args()
     if args.bulbs_file:
